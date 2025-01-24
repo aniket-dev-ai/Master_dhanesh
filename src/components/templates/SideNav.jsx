@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function SideNav() {
@@ -12,7 +12,10 @@ function SideNav() {
         <h1 className="text-white font-semibold text-base mt-6 mb-3 ml-2">
           New Feeds
         </h1>
-        <Link className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
+        <Link
+          to={"/trending"}
+          className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300"
+        >
           <i class="mr-2    ri-fire-fill"></i> Trending
         </Link>
         <Link className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
