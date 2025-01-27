@@ -18,16 +18,19 @@ function SideNav() {
         >
           <i class="mr-2    ri-fire-fill"></i> Trending
         </Link>
-        <Link className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
+        <Link
+          to={"/Popular"}
+          className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300"
+        >
           <i class="mr-2  ri-bard-fill"></i> Popular
         </Link>
-        <Link className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
+        <Link to={"/movie"} className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
           <i class="mr-2  ri-movie-2-ai-fill"></i> Movies
         </Link>
-        <Link className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
+        <Link to={"/tv"} className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
           <i class="mr-2  ri-tv-2-fill"></i> Tv Shows
         </Link>
-        <Link className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
+        <Link to={"/person"} className="hover:bg-[#6556CF] hover:text-white rounded p-3 duration-300">
           <i class="mr-2  ri-team-fill"></i> People
         </Link>
         <hr className="border-none bg-zinc-400 h-[1px]" />

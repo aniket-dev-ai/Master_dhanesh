@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SideNav from "./templates/SideNav";
 import TopNav from "./templates/TopNav";
-import axios from "../utils/axios";
+import axios from "./utils/axios";
 import Header from "./templates/Header";
 import HorizontalCards from "./templates/HorizontalCards";
 import DropDown from "./templates/DropDown";

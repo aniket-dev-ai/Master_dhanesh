@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "../../utils/axios";
+import axios from "../utils/axios";
 
 function TopNav() {
   const [query, setquery] = useState("");
@@ -27,7 +27,7 @@ function TopNav() {
         onChange={(e) => setquery(e.target.value)}
         value={query}
         placeholder="Search Anything"
-        className="w-[50%] mx-6 p-2 text-zinc-200 outline-none border-none bg-transparent"
+        className="w-[50vh] mx-6 p-2 text-zinc-200 outline-none border-none bg-transparent"
       />
       {query.length > 0 && (
         <i
@@ -38,7 +38,7 @@ function TopNav() {
         ></i>
       )}
 
-      <div className="absolute w-[50%] max-h-[50vh] bg-zinc-200 top-[100%] left-[6%] overflow-auto text-sm ">
+      <div className="absolute w-[50vh] max-h-[50vh] bg-zinc-200 top-[100%] left-[6%] overflow-auto text-sm ">
         {searches.length > 0 &&
           searches.map((item) => {
             return (

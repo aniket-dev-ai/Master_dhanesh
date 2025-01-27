@@ -23,7 +23,7 @@ function Header({ walpaper }) {
       </h1>
       <h1 className="w-[70%] text-white text-sm">
         {walpaper.overview.slice(0, 200)}....{" "}
-        <Link className="text-blue-500">More</Link>
+        <Link to={`${walpaper.media_type}/details/${walpaper.id}`} className="text-blue-500">More</Link>
       </h1>
       <p className="text-white mt-2 flex text-sm gap-2 ">
         <i class="text-yellow-500  ri-megaphone-fill"></i>
